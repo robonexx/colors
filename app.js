@@ -1,7 +1,10 @@
-const header = document.querySelector('.colorHeadline')
+const headline = document.querySelector('.colorHeadline')
+const logo = document.querySelector('.logo')
+/* const nav = document.querySelector('.nav') */
 const btn = document.querySelector('.btn')
 const wrapper = document.querySelector('.wrapper')
 const body = document.querySelector('body')
+
 
 btn.addEventListener('click', () => {
 
@@ -10,15 +13,16 @@ btn.addEventListener('click', () => {
     }
 
     bodyColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()}) `;
-    headerColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    headlineColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
     btnColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
     wrapperColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    navColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
     
     body.style.backgroundColor = bodyColor;
     wrapper.style.backgroundColor = wrapperColor;
-    header.style.color = headerColor;
+    headline.style.color = headlineColor;
+    logo.style.color = headlineColor;
     btn.style.backgroundColor = btnColor;
-    btn.innerHTML.style.color = btnColor;
 });
 
 const colors = ['sectionZero', 'sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour']
