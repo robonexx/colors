@@ -27,24 +27,22 @@ header {
 
 header h2 {
   font-size: 3rem;
-  margin: 1rem 5rem;
+  margin: 1rem 3rem;
   color: rgba(102, 100, 100, 0.623);
   text-transform: uppercase;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 nav {
-  border-radius: 800% 100% 0% 0%;
-  width: 50vw;
+  position: fixed;
+  top: 5vh;
+  right: 2vw;
   
 }
 ul {
   height: 500px;
   width: 500px;
   display: block;
-  position: fixed;
-  top: 5vh;
-  right: 5vw;
   
 }
 li {
@@ -148,39 +146,73 @@ a:hover {
 
 section {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  section.about>h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  section>#about {
+    position: relative;
+    background-blend-mode: lighten;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    background-image: url(./robiou.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
   }
   
+   section>#about>h1 {
+     position: absolute;
+     top: 0;
+     left: 20vw;
+   }
+  
   h1 {
-    margin: 20rem 30rem;
+    margin: 10rem auto;
     text-align: center;
     font-size: 5rem;
   }
 
   .sectionZero {
-      background-color: rgb(215, 245, 93);
-      color: rgb(176, 141, 35);
+      background-color: #322514;
+      color: #e75874;
+      border: 1px solid #fbcbc9;
   }
   
   .sectionOne {
-    background-color: rgb(104, 48, 172);
-    color: rgb(113, 250, 105);
+    background-color: #1d3c45;
+    color: #fff1e1;
+    border: 1px solid #d2601a;
   }
 
   
-  .sectionTwo {
-    background-color: #90BEDE;
-    color: rgb(53, 101, 57);
+  .sectionAbout {
+    background-color: #e8d21d;
+    color: #cf1578;
+    border: 1px solid #039fbe;
   }
   
   .sectionThree {
-    background-color: rgb(201, 165, 157);
-    color: rgb(166, 88, 119);
+    background-color: #500472;
+    color: #79cbb8;
+    border: 1px solid #4a536b;
   }
   
   .sectionFour {
-    background-color: rgb(248, 184, 48);
-    color: rgb(25, 118, 212);
+    background: linear-gradient(120deg, #16acea, #4203c9);
+    color: #e8d71e;
+    border: 1px solid #d71b3b;
   }
 
 /* 

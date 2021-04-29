@@ -25,7 +25,7 @@ btn.addEventListener('click', () => {
     btn.style.backgroundColor = btnColor;
 });
 
-const colors = ['sectionZero', 'sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour']
+const colors = ['sectionZero', 'sectionOne', 'sectionAbout', 'sectionThree', 'sectionFour']
 
 const sections = [...document.getElementsByTagName('section')]
 
